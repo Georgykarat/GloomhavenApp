@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloom Tracker:&nbsp;{{squadname}}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'menu/css/menu.css' %}">
+    <script src="{% static 'home/js/jQueryv3.6.0.min.js' %}"></script>
+    <script src="{% static 'home/js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'home/js/home.js' %}"></script>
+    {% comment %} <style type="text/css">
+          @font-face{
+  font-family: Lemon Milk Pro;
+  font-style: normal;
+  src: url({% static 'css/Lemon Milk Pro Ultra Light.otf' %});
+}
+
+@font-face{
+  font-family: Lemon Milk Pro b;
+  font-style: bold;
+  src: url({% static 'css/Lemon Milk Pro Medium.otf' %});
+}
+
+@font-face{
+  font-family: Lemon Milk Regular;
+  font-style: bold;
+  src: url({% static 'css/Lemon Milk Pro Regular.otf' %});
+}
+@font-face{
+  font-family: Lemon Milk Pro bb;
+  font-style: bold;
+  src: url({% static 'css/Lemon Milk Pro Bold.otf' %});
+} 
+    </style> {% endcomment %}
+</head>
+<body>
+    <header>
+        <div class="header-gh-logo"></div>
+        <div class="header-squad-name">Отряд:&nbsp;{{squadname}}</div>
+        <div class="header_section">
+          <div class='header-label'>Репутация</div>
+          <div class='repcounter'>
+            <div class='repbtn-e'>-</div>
+            <div class='repbtn'>{{rep}}</div>
+            <div class='repbtn-e'>+</div>
+          </div>
+        </div>
+    </header>
+    <main>
+        Меню отряда:&nbsp;{{squadname}}
+    </main>
+</body>
+{% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/home_media.css' %}"> {% endcomment %}
+</html>
+

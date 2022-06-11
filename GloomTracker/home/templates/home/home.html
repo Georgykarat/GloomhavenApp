@@ -52,13 +52,32 @@
                         <div class="main-desc">Описание отряда</div>
                         <div class="main-rep">Репутация</div>
                         <div class="main-pros">Процветание гавани</div>
-                        <div class="main-con">Продолжить</div>
+                        <div class="main-con">&nbsp;</div>
                     </div>
-                    <div class="main-count-zone-no">Нет отрядов</div>
+                    {% if squads == None %}
+                        <div class="main-count-zone-no">Нет отрядов</div>
+                    {% else %}
+                        <div class="main-count-zone-stroke-area">
+                            {% for squad in squads %}
+                                <div class="main-count-zone-stroke">
+                                    <div class="main-name">{{squad.squad_name}}</div>
+                                    <div class="main-desc">{{squad.squad_desc}}</div>
+                                    <div class="main-rep">{{squad.reputation}}</div>
+                                    <div class="main-pros">{{squad.prospect}}</div>
+                                    <a href="{{squad.id}}/"><div class="main-con">Продолжить</div></a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
                 </div>
             </div>
             <div class="main-choose-squad-bform">
-
+                <div class="main-cont-squad">Создайте свой отряд:</div>
+                <label class="main-newsquad-label" id="squadname">Название отряда:</label>
+                <input class="main_input" id="squadname-in" maxlength=40>
+                <label class="main-newsquad-label" id="squaddesc">Краткое описание отряда:</label>
+                <input class="main_input" id="squaddesc-in" maxlength=50>
+                <div class="main-go-squad-btn">Начать путешествие</div>
             </div>
         </div>
     </main>

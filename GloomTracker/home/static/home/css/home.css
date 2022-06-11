@@ -95,7 +95,7 @@ main {
 }
 .main-choose-squad-bstrip {
     width: 100%;
-    display: none; /* Should be flex later */
+    display: flex; /* Should be flex later */
     justify-content: center;
     align-items: center;
     height: 60vh;
@@ -131,6 +131,25 @@ main {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+.main-count-zone-stroke-area {
+    height: 90%;
+    display: block;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.main-count-zone-stroke {
+    width: 100%;
+    height: 50px;
+    background-color: #000000AA;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
 .main-name {
     width: 40%;
     display: flex;
@@ -159,12 +178,18 @@ main {
     text-align: center;
     padding-left: 20px;
 }
+.main-con:hover {
+    border-bottom: 1px solid white;
+    transition: .5s;
+}
 .main-con {
     width: 10%;
     display: flex;
     color: white;
     text-align: center;
     padding-left: 20px;
+    border-bottom: 1px solid transparent;
+    transition: .5s;
 }
 .main-count-zone-no {
     width: 100%;
@@ -178,10 +203,53 @@ main {
 }
 .main-choose-squad-bform {
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 60vh;
     flex-wrap: wrap;
     overflow-y: auto;
+}
+.main-newsquad-label {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+.main_input {
+    display: flex;
+    width: 60%;
+    background-color: #00000090;
+    height: 50px;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+.main-go-squad-btn {
+    width: 60%;
+    background-color: #654321;
+    height: 50px;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    border-bottom: 4px solid #50351a;
+    box-shadow: 1px 1px 5px black;
+    position: relative;
+    transition: .5s;
+    top: 0;
+}
+.main-go-squad-btn:hover {
+    top: 3px;
+    border-bottom: 0px solid #50351a;
+    background-color: #b48b33;
+    transition: .5s;
 }
