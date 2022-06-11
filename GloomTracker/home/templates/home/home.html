@@ -1,1 +1,43 @@
-Home Page
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloom Tracker</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/home.css' %}">
+    <script src="{% static 'js/jQueryv3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/homescript.js' %}"></script>
+    {% comment %} <style type="text/css">
+          @font-face{
+  font-family: Lemon Milk Pro;
+  font-style: normal;
+  src: url({% static 'css/Lemon Milk Pro Ultra Light.otf' %});
+}
+
+@font-face{
+  font-family: Lemon Milk Pro b;
+  font-style: bold;
+  src: url({% static 'css/Lemon Milk Pro Medium.otf' %});
+}
+
+@font-face{
+  font-family: Lemon Milk Regular;
+  font-style: bold;
+  src: url({% static 'css/Lemon Milk Pro Regular.otf' %});
+}
+@font-face{
+  font-family: Lemon Milk Pro bb;
+  font-style: bold;
+  src: url({% static 'css/Lemon Milk Pro Bold.otf' %});
+} 
+    </style> {% endcomment %}
+</head>
+<body>
+    <h1>Home Page</h1>
+</body>
+{% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/home_media.css' %}"> {% endcomment %}
+</html>
+
