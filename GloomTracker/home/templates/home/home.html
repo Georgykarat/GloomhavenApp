@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gloom Tracker</title>
     <link rel="stylesheet" type="text/css" href="{% static 'home/css/home.css' %}">
-    <script src="{% static 'js/jQueryv3.6.0.min.js' %}"></script>
-    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
-    <script src="{% static 'js/homescript.js' %}"></script>
+    <script src="{% static 'home/js/jQueryv3.6.0.min.js' %}"></script>
+    <script src="{% static 'home/js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'home/js/home.js' %}"></script>
     {% comment %} <style type="text/css">
           @font-face{
   font-family: Lemon Milk Pro;
@@ -36,7 +36,29 @@
     </style> {% endcomment %}
 </head>
 <body>
-    <h1>Home Page</h1>
+    <header>
+        <div class="header-gh-logo"></div>
+    </header>
+    <main>
+        <div class="main-choose-squad">
+            <div class="main-choose-squad-strip">
+                <div class="main-create-squad-btn">Создать отряд</div>
+            </div>
+            <div class="main-choose-squad-bstrip">
+                <div class="main-cont-squad">Продолжить путешествие:</div>
+                <div class="main-count-zone">
+                    <div class="main-count-zone-header">
+                        <div class="main-name">Название отряда</div>
+                        <div class="main-desc">Описание отряда</div>
+                        <div class="main-rep">Репутация</div>
+                        <div class="main-pros">Процветание гавани</div>
+                        <div class="main-con">Продолжить</div>
+                    </div>
+                    <div class="main-count-zone-no">Нет отрядов</div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/home_media.css' %}"> {% endcomment %}
 </html>
