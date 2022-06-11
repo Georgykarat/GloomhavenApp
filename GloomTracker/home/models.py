@@ -6,6 +6,7 @@ from django.db import models
 
 class Squad(models.Model):
     squad_name = models.CharField(max_length = 20)
+    squad_desc = models.CharField(max_length = 50)
     squad_start = models.DateTimeField()
     squad_last = models.DateTimeField()
     reputation = models.IntegerField()
