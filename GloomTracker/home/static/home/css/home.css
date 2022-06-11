@@ -82,7 +82,7 @@ main {
     font-size: 25px;
     cursor: pointer;
     border-bottom: 4px solid #50351a;
-    box-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 5px black;
     position: relative;
     transition: .5s;
     top: 0;
@@ -90,11 +90,12 @@ main {
 .main-create-squad-btn:hover {
     top: 3px;
     border-bottom: 0px solid #50351a;
+    background-color: #b48b33;
     transition: .5s;
 }
 .main-choose-squad-bstrip {
     width: 100%;
-    display: flex;
+    display: none; /* Should be flex later */
     justify-content: center;
     align-items: center;
     height: 60vh;
@@ -174,4 +175,13 @@ main {
     font-size: 40px;
 
     color: white;
+}
+.main-choose-squad-bform {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-wrap: wrap;
+    overflow-y: auto;
 }
