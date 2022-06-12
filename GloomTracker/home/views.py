@@ -30,11 +30,31 @@ def create_squad(request):
 
 
 def open_menu(request, squadid):
-    squaddata = Squad.objects.filter(id=int(squadid)).values_list('squad_name', 'reputation')[0]
+    squaddata = Squad.objects.filter(id=int(squadid)).values_list('squad_name', 'reputation', 'prospect')[0]
     if ActiveSession.objects.all().exists():
         ActiveSession.objects.all().delete()
     ActiveSession(squad_id=squadid).save()
     return render(request, 'menu/menu.html', {
         'squadname': squaddata[0],
         'rep': squaddata[1],
+        'prospect': squaddata[2],
     })
+
+def add_rep(request, squadid):
+    if request.is_ajax():
+        rep = Squad.objects.filter(id=int(squadid)).values_list('reputation')[0][0]
+        Squad.objects.filter(id=int(squadid)).update(reputation=rep+1)
+        responsecode = 200
+    else:
+        responsecode = 401
+    return JsonResponse({'responsecode': responsecode}, status=200)
+
+def min_rep(request, squadid):
+    if request.is_ajax():
+        rep = Squad.objects.filter(id=int(squadid)).values_list('reputation')[0][0]
+        Squad.objects.filter(id=int(squadid)).update(reputation=rep-1)
+        responsecode = 200
+    else:
+        responsecode = 401
+    return JsonResponse({'responsecode': responsecode}, status=200)
+
