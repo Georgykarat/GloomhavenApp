@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gloom Tracker:&nbsp;{{squadname}}</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'menu/css/menu.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'map/css/map.css' %}">
     <script src="{% static 'home/js/jQueryv3.6.0.min.js' %}"></script>
     <script src="{% static 'home/js/jquery-ui.min.js' %}"></script>
     <script src="{% static 'menu/js/menu.js' %}"></script>
@@ -37,6 +37,7 @@
 </head>
 <body>
     <header>
+        <a href="../"><button>Назад</button></a>
         <div class="header-gh-logo"></div>
         <div class="header-squad-name">Squad:&nbsp;{{squadname}}</div>
         <div class="header_section">
@@ -65,26 +66,26 @@
         </div>
     </header>
     <main>
-      <div class='main_header-strip'>
-        <div class='main_header-section'>>
-          <div class='main_header-section-b'>Gloomhaven Prosperity</div>
-          <div class='main_header-section-na' id="pros-level">{{prospect_level}}</div>
-        </div>
-        <div class='main_header-section'>>
-          <div class='main_header-section-b'>Market Discount</div>
-          <div class='main_header-section-n' id="disc-level">0</div>
-        </div>
-        <div class='main_header-section'>>
-          <div class='main_header-section-b'>Event</div>
-          <div class='main_header-section-na'>None</div>
-        </div>
-      </div>
-      <div class='main_header-strip'>
-        <div class='main_header_h'></div>
-      </div>
-      <div class='main_header-strip'>
-        <a href='map/'><div class='main_header_map'>Gloomhaven Map</div></a>
-      </div>
+      <img src="{% static 'map/img/Gloommap.jpeg' %}" class="map">
+        {% if '1' in get_quests %}
+        <img src="{% static 'map/img/m1.png' %}" class="m1-quest activeq" alt="1. Чёрный курган">
+        {% endif %}
+        {% if '2' in get_quests %}
+        <img src="{% static 'map/img/m2.png' %}" class="m2-quest activeq" alt="2. Подземное логово">
+        {% endif %}
+        <img src="{% static 'map/img/m3.png' %}" class="m3-quest activeq" alt="3. Лагерь иноксов">
+        <img src="{% static 'map/img/m4.png' %}" class="m4-quest activeq" alt="4. Склеп проклятых">
+        <img src="{% static 'map/img/m5.png' %}" class="m5-quest activeq" alt="5. Зловещий склеп">
+        <img src="{% static 'map/img/m6.png' %}" class="m6-quest activeq" alt="6. Обветшалый склеп">
+        <img src="{% static 'map/img/m7.png' %}" class="m7-quest activeq" alt="7. Цветущий грот">
+        <img src="{% static 'map/img/m8.png' %}" class="m8-quest activeq" alt="8. Склад">
+        <img src="{% static 'map/img/m9.png' %}" class="m9-quest activeq" alt="9. Алмазная шахта">
+        <img src="{% static 'map/img/m10.png' %}" class="m10-quest activeq" alt="10. Измерение силы стихий">
+        <img src="{% static 'map/img/m11.png' %}" class="m11-quest activeq" alt="11. Площадь Мрачной Гавани А.">
+        <img src="{% static 'map/img/m12.png' %}" class="m12-quest activeq" alt="12. Площадь Мрачной Гавани Б.">
+        <img src="{% static 'map/img/m13.png' %}" class="m13-quest activeq" alt="13. Храм прорицателя">
+        <img src="{% static 'map/img/m14.png' %}" class="m14-quest activeq" alt="14. Ледяная пещера">
+        <img src="{% static 'map/img/m15.png' %}" class="m15-quest activeq" alt="15. Святилище силы">
     </main>
 </body>
 {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/home_media.css' %}"> {% endcomment %}

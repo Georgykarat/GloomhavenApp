@@ -1,5 +1,5 @@
 from django.contrib import admin
-from home.models import Squad, ActiveSession
+from home.models import Squad, ActiveSession, AvaliableQuests
 # Register your models here.
 
 class SquadAdmin(admin.ModelAdmin):
@@ -10,5 +10,11 @@ class SquadAdmin(admin.ModelAdmin):
 class ActiveSessionAdmin(admin.ModelAdmin):
     list_display = ['id', 'squad_id']
 
+
+class AvaliableQuestsAdmin(admin.ModelAdmin):
+    list_display = ['squad_id', 'expansion', 'mission', 'finished', 'blocked']
+    search_fields = ['squad_id']
+
 admin.site.register(Squad, SquadAdmin)
 admin.site.register(ActiveSession, ActiveSessionAdmin)
+admin.site.register(AvaliableQuests, AvaliableQuestsAdmin)

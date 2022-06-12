@@ -7,4 +7,9 @@ urlpatterns = [
     path("<squadid>/", views.open_menu, name='pathpage'),
     path("<squadid>/addrep/", views.add_rep, name='add_rep'),
     path("<squadid>/minrep/", views.min_rep, name='min_rep'),
+    path("<squadid>/addpro/", views.add_pro, name='add_pro'),
+    path("<squadid>/minpro/", views.min_pro, name='min_pro'),
+    path("<squadid>/addch/", views.add_ch, name='add_ch'),
+    path("<squadid>/minch/", views.min_ch, name='min_ch'),
+    path("<squadid>/map/", views.gloom_map, name='map'),
 ]

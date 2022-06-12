@@ -22,3 +22,11 @@ class ActiveSession(models.Model):
 
     def __str__(self):
         return self.squad_id
+
+class AvaliableQuests(models.Model):
+    squad_id = models.IntegerField()
+    expansion = models.IntegerField()
+    mission = models.CharField(max_length = 10, default=None, blank=True)
+    finished = models.BooleanField()
+    blocked = models.BooleanField()
+
