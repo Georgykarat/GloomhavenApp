@@ -323,5 +323,136 @@ main {
     right: 40.6%;
     z-index: 2;
 }
-
-
+.m16-quest {
+    height: 5.5%;
+    position: absolute;
+    top: 14.4%;
+    right: 64.9%;
+    z-index: 2;
+}
+.m17-quest {
+    height: 9%;
+    position: absolute;
+    top: 63%;
+    right: 4.9%;
+    z-index: 2;
+}
+.m18-quest {
+    height: 4%;
+    position: absolute;
+    top: 19%;
+    right: 22.0%;
+    z-index: 2;
+}
+.m19-quest {
+    height: 6.7%;
+    position: absolute;
+    top: 76.5%;
+    right: 60.4%;
+    z-index: 2;
+}
+.m20-quest {
+    height: 6.0%;
+    position: absolute;
+    top: 45.2%;
+    right: 32.4%;
+    z-index: 2;
+}
+.m21-quest {
+    height: 5.6%;
+    position: absolute;
+    top: 18.4%;
+    right: 58.1%;
+    z-index: 2;
+}
+.m22-quest {
+    height: 5.8%;
+    position: absolute;
+    top: 64.8%;
+    right: 54.0%;
+    z-index: 2;
+}
+.m23-quest {
+    height: 5.4%;
+    position: absolute;
+    top: 17.6%;
+    right: 17.9%;
+    z-index: 2;
+}
+.m24-quest {
+    height: 6%;
+    position: absolute;
+    top: 15.2%;
+    right: 68.9%;
+    z-index: 2;
+}
+.m25-quest {
+    height: 6.3%;
+    position: absolute;
+    top: 7.7%;
+    right: 72.2%;
+    z-index: 2;
+}
+.m26-quest {
+    height: 4.5%;
+    position: absolute;
+    top: 22.2%;
+    right: 17.0%;
+    z-index: 2;
+}
+.m27-quest {
+    height: 3.6%;
+    position: absolute;
+    top: 27.0%;
+    right: 64.5%;
+    z-index: 2;
+}
+.m28-quest {
+    height: 5.2%;
+    position: absolute;
+    top: 28.3%;
+    right: 76.0%;
+    z-index: 2;
+}
+.m29-quest {
+    height: 5.2%;
+    position: absolute;
+    top: 28.8%;
+    right: 80.3%;
+    z-index: 2;
+}
+.m30-quest {
+    height: 5.5%;
+    position: absolute;
+    top: 84.3%;
+    right: 19.1%;
+    z-index: 2;
+}
+.m31-quest {
+    height: 5.5%;
+    position: absolute;
+    top: 6.3%;
+    right: 13.8%;
+    z-index: 2;
+}
+.m32-quest {
+    height: 5.3%;
+    position: absolute;
+    top: 70.2%;
+    right: 39.3%;
+    z-index: 2;
+}
+.m33-quest {
+    height: 5.3%;
+    position: absolute;
+    top: 5.2%;
+    right: 61.7%;
+    z-index: 2;
+}
+.m34-quest {
+    height: 6.1%;
+    position: absolute;
+    top: 2.8%;
+    right: 76%;
+    z-index: 2;
+}
