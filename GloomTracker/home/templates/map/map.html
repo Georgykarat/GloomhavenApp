@@ -69,11 +69,19 @@
       <img src="{% static 'map/img/Gloommap.jpeg' %}" class="map">
         {% if '1' in get_quests %}
         <img src="{% static 'map/img/m1.png' %}" class="m1-quest activeq" alt="1. Чёрный курган">
+        {% else %}
+        <img src="{% static 'map/img/m1.png' %}" class="m1-quest secret" alt="1. Чёрный курган">
         {% endif %}
         {% if '2' in get_quests %}
         <img src="{% static 'map/img/m2.png' %}" class="m2-quest activeq" alt="2. Подземное логово">
+        {% else %}
+        <img src="{% static 'map/img/m2.png' %}" class="m2-quest secret" alt="2. Подземное логово">
         {% endif %}
+        {% if '3' in get_quests %}
         <img src="{% static 'map/img/m3.png' %}" class="m3-quest activeq" alt="3. Лагерь иноксов">
+        {% else %}
+        <img src="{% static 'map/img/m3.png' %}" class="m3-quest secret" alt="3. Лагерь иноксов">
+        {% endif %}
         <img src="{% static 'map/img/m4.png' %}" class="m4-quest activeq" alt="4. Склеп проклятых">
         <img src="{% static 'map/img/m5.png' %}" class="m5-quest activeq" alt="5. Зловещий склеп">
         <img src="{% static 'map/img/m6.png' %}" class="m6-quest activeq" alt="6. Обветшалый склеп">
@@ -105,6 +113,67 @@
         <img src="{% static 'map/img/m32.png' %}" class="m32-quest activeq" alt="32. Ветхая пуща">
         <img src="{% static 'map/img/m33.png' %}" class="m33-quest activeq" alt="33. Оружейная савваса">
         <img src="{% static 'map/img/m34.png' %}" class="m34-quest activeq" alt="34. Выжженая вершина">
+        <img src="{% static 'map/img/m35.png' %}" class="m35-quest activeq" alt="35. Бойницы А">
+        <img src="{% static 'map/img/m36.png' %}" class="m36-quest activeq" alt="36. Бойницы Б">
+        <img src="{% static 'map/img/m37.png' %}" class="m37-quest activeq" alt="37. Гиблая впадина">
+        <img src="{% static 'map/img/m38.png' %}" class="m38-quest activeq" alt="38. Невольничьи клетки">
+        <img src="{% static 'map/img/m39.png' %}" class="m39-quest activeq" alt="39. Коварная пропасть">
+        <img src="{% static 'map/img/m40.png' %}" class="m40-quest activeq" alt="40. Древние защитные механизмы">
+        <img src="{% static 'map/img/m41.png' %}" class="m41-quest activeq" alt="41. Вековая гробница">
+        <img src="{% static 'map/img/m42.png' %}" class="m42-quest activeq" alt="42. Царство Голоса">
+        <img src="{% static 'map/img/m43.png' %}" class="m43-quest activeq" alt="43. Гнездо Дрейков">
+        <img src="{% static 'map/img/m44.png' %}" class="m44-quest activeq" alt="44. Нападение племени">
+        <img src="{% static 'map/img/m45.png' %}" class="m45-quest activeq" alt="45. Привал болотных повстанцев">
+        <img src="{% static 'map/img/m46.png' %}" class="m46-quest activeq" alt="46. Пик кошмара">
+        <img src="{% static 'map/img/m47.png' %}" class="m47-quest activeq" alt="47. Логово невидящего пса">
+        <img src="{% static 'map/img/m48.png' %}" class="m48-quest activeq" alt="48. Тенистая чаща">
+        <img src="{% static 'map/img/m49.png' %}" class="m49-quest activeq" alt="49. Лагерь повстанцев">
+        <img src="{% static 'map/img/m50.png' %}" class="m50-quest activeq" alt="50. Призрачная крепость">
+        <img src="{% static 'map/img/m51.png' %}" class="m51-quest activeq" alt="51. Пустота">
+        <img src="{% static 'map/img/m52.png' %}" class="m52-quest activeq" alt="52. Жуткий погреб">
+        <img src="{% static 'map/img/m53.png' %}" class="m53-quest activeq" alt="53. Подвал склепа">
+        <img src="{% static 'map/img/m54.png' %}" class="m54-quest activeq" alt="54. Ледяной дворец">
+        <img src="{% static 'map/img/m55.png' %}" class="m55-quest activeq" alt="55. Туманные заросли">
+        <img src="{% static 'map/img/m56.png' %}" class="m56-quest activeq" alt="56. Разбойничья пуща">
+        <img src="{% static 'map/img/m57.png' %}" class="m57-quest activeq" alt="57. Расследование">
+        <img src="{% static 'map/img/m58.png' %}" class="m58-quest activeq" alt="58. Кровавая хижина">
+        <img src="{% static 'map/img/m59.png' %}" class="m59-quest activeq" alt="59. Забытая роща">
+        <img src="{% static 'map/img/m60.png' %}" class="m60-quest activeq" alt="60. Алхимическая лаборатория">
+        <img src="{% static 'map/img/m61.png' %}" class="m61-quest activeq" alt="61. Исчезающий маяк">
+        <img src="{% static 'map/img/m62.png' %}" class="m62-quest activeq" alt="62. Колодец душ">
+        <img src="{% static 'map/img/m63.png' %}" class="m63-quest activeq" alt="63. Жерло вулкана">
+        <img src="{% static 'map/img/m64.png' %}" class="m64-quest activeq" alt="64. Подводная лагуна">
+        <img src="{% static 'map/img/m65.png' %}" class="m65-quest activeq" alt="65. Серная шахта">
+        <img src="{% static 'map/img/m66.png' %}" class="m66-quest activeq" alt="66. Заводное побережье">
+        <img src="{% static 'map/img/m67.png' %}" class="m67-quest activeq" alt="67. Мистическая библиотека">
+        <img src="{% static 'map/img/m68.png' %}" class="m68-quest activeq" alt="68. Ядовитая трясина">
+        <img src="{% static 'map/img/m69.png' %}" class="m69-quest activeq" alt="69. Колодей несчастий">
+        <img src="{% static 'map/img/m70.png' %}" class="m70-quest activeq" alt="70. Прикованный остров">
+        <img src="{% static 'map/img/m71.png' %}" class="m71-quest activeq" alt="71. Подветренное нагорье">
+        <img src="{% static 'map/img/m72.png' %}" class="m72-quest activeq" alt="72. Скользкая роща">
+        <img src="{% static 'map/img/m73.png' %}" class="m73-quest activeq" alt="73. Гряда камнепадов">
+        <img src="{% static 'map/img/m74.png' %}" class="m74-quest activeq" alt="74. Торговый корабль">
+        <img src="{% static 'map/img/m75.png' %}" class="m75-quest activeq" alt="75. Заросшее кладбище">
+        <img src="{% static 'map/img/m76.png' %}" class="m76-quest activeq" alt="76. Улей жнецов">
+        <img src="{% static 'map/img/m77.png' %}" class="m77-quest activeq" alt="77. Хранилище тайн">
+        <img src="{% static 'map/img/m78.png' %}" class="m78-quest activeq" alt="78. Темница жертвоприношений">
+        <img src="{% static 'map/img/m79.png' %}" class="m79-quest activeq" alt="79. Затерянный храм">
+        <img src="{% static 'map/img/m80.png' %}" class="m80-quest activeq" alt="80. Цитадель Караула">
+        <img src="{% static 'map/img/m81.png' %}" class="m81-quest activeq" alt="81. Храм затмения">
+        <img src="{% static 'map/img/m82.png' %}" class="m82-quest activeq" alt="82. Пылающая гора">
+        <img src="{% static 'map/img/m83.png' %}" class="m83-quest activeq" alt="83. Обитель теней">
+        <img src="{% static 'map/img/m84.png' %}" class="m84-quest activeq" alt="84. Пещера кристаллов">
+        <img src="{% static 'map/img/m85.png' %}" class="m85-quest activeq" alt="85. Храм солнца">
+        <img src="{% static 'map/img/m86.png' %}" class="m86-quest activeq" alt="86. Разграбленная деревня">
+        <img src="{% static 'map/img/m87.png' %}" class="m87-quest activeq" alt="87. Злосчастное побережье">
+        <img src="{% static 'map/img/m88.png' %}" class="m88-quest activeq" alt="88. Водное измерение">
+        <img src="{% static 'map/img/m89.png' %}" class="m89-quest activeq" alt="89. Убежище синдиката">
+        <img src="{% static 'map/img/m90.png' %}" class="m90-quest activeq" alt="90. Демонический портал">
+        <img src="{% static 'map/img/m91.png' %}" class="m91-quest activeq" alt="91. Дикая схватка">
+        <img src="{% static 'map/img/m92.png' %}" class="m92-quest activeq" alt="92. Потасовка в переулке">
+        <img src="{% static 'map/img/m93.png' %}" class="m93-quest activeq" alt="93. Затонувшее судно">
+        <img src="{% static 'map/img/m94.png' %}" class="m94-quest activeq" alt="94. Жилище вермлингов">
+        <img src="{% static 'map/img/m95.png' %}" class="m95-quest activeq" alt="95. Час расплаты">
     </main>
 </body>
 {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/home_media.css' %}"> {% endcomment %}
